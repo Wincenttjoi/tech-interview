@@ -14,6 +14,18 @@ tel = {} // initialize empty dictionary
 tel = {'jack': 4098, 'sape': 4139, 'guido': 211}
 ```
 
+### Dictionary with frequency as the value
+
+```python
+  my_list = [..., ..., ...]
+  freq = {}
+  for item in my_list:
+      if (item in freq):
+          freq[item] += 1
+      else:
+          freq[item] = 1
+```
+
 ## Initialize using List Comprehension
 
 ```python
@@ -47,4 +59,3 @@ To sort by VALUES in REVERSE
 ```python
 sort_orders = sorted(orders.items(), key=lambda x: x[1], reverse=True)
 ```
-
