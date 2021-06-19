@@ -53,7 +53,7 @@ s1.join(s2): 1abc2abc3
 s2.join(s1): a123b123c
 ```
 
-### Example 2: SEts
+### Example 2: Sets
 
 Input
 
@@ -104,3 +104,11 @@ TypeError: sequence item 0: expected str instance, int found
 ```
 
 The join() method tries to join the keys (not values) of the dictionary with the string separator.
+
+## To find ASCII
+
+```python
+ord(char) // returns int
+```
+
+Difference between lower and upper case of same alphabet is 32.
