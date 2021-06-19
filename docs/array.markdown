@@ -26,3 +26,4 @@ Reverse the order of the items in the array.
 
 **array.tobytes():**
 Convert the array to an array of machine values and return the bytes representation (the same sequence of bytes that would be written to a file by the tofile() method.)
+
