@@ -4,7 +4,7 @@ title: Dictionary
 nav_order: 3
 ---
 
-# Initilization
+# Initialization
 
 ## Standard Initialization
 
