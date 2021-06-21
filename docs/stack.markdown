@@ -15,7 +15,7 @@ s.pop() // pops last element
 s[-1] // to get last element without popping, peek element
 ```
 
-![](/assets/images/stack-1.JPG)
+![]({{site.url}}/{{site.baseurl}}/assets/images/stack-1.JPG)
 
 List is not recommended:
 
@@ -62,11 +62,11 @@ class Stack:
 
 ### Supported methods
 
-![](/assets/images/stack-2.JPG)
+![]({{site.url}}/{{site.baseurl}}/assets/images/stack-2.JPG)
 
 # Questions
 
-![](/assets/images/stack-3.JPG)
+![]({{site.url}}/{{site.baseurl}}/assets/images/stack-3.JPG)
 
 ```python
 class Solution:

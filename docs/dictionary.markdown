@@ -62,7 +62,7 @@ sort_orders = sorted(orders.items(), key=lambda x: x[1], reverse=True)
 
 # Examples
 
-![](/assets/images/dict-1.JPG)
+![]({{site.url}}/{{site.baseurl}}/assets/images/dict-1.JPG)
 
 ```python
 class Solution:
