@@ -6,6 +6,11 @@ nav_order: 5
 
 # String
 
+![]({{site.url}}/{{site.baseurl}}/assets/images/string-1.JPG)
+![]({{site.url}}/{{site.baseurl}}/assets/images/string-2.JPG)
+![]({{site.url}}/{{site.baseurl}}/assets/images/string-3.JPG)
+
+
 ## Join() method
 
 Takes in iterable, returns a string
