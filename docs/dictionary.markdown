@@ -4,6 +4,10 @@ title: Dictionary
 nav_order: 3
 ---
 
+
+![]({{site.url}}/{{site.baseurl}}/assets/images/dict-2.JPG)
+
+
 # Initialization
 
 ## Standard Initialization
