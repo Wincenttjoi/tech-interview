@@ -123,9 +123,20 @@ String
 
 - Longest Substring Without Repeating Characters - https://leetcode.com/problems/longest-substring-without-repeating-characters/
 
+![]({{site.url}}/{{site.baseurl}}/assets/images/string-qn-1.JPG)
 
-
-
+```python
+def lengthOfLongestSubstring(self, s: str) -> int:
+    window = collections.deque([])
+    max = 0
+    for char in s:
+        window.append(char)
+        while window.count(char) == 2:
+            window.popleft()                       
+        if max < len(window):
+            max = len(window)
+    return max
+```
 
 - Longest Repeating Character Replacement - https://leetcode.com/problems/longest-repeating-character-replacement/
 - Minimum Window Substring - https://leetcode.com/problems/minimum-window-substring/

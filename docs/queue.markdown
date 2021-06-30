@@ -4,6 +4,10 @@ title: Queue
 nav_order: 6
 ---
 
+# Methods
+
+![]({{site.url}}/{{site.baseurl}}/assets/images/deque.JPG)
+
 # Implementation
 
 ## Using list as a queue
