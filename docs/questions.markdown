@@ -102,6 +102,27 @@ Interval
 Linked List
 
 - Reverse a Linked List - https://leetcode.com/problems/reverse-linked-list/
+
+![]({{site.url}}/{{site.baseurl}}/assets/images/linkedlist-qn-1.JPG)
+
+```python
+def reverseList(self, head: ListNode) -> ListNode:
+    prev = None
+    curr = head
+    while curr:
+        temp = curr.next
+        curr.next = prev
+        prev = curr
+        curr = temp
+    return prev
+```
+
+Note: 
+1. MUST have prev, initially set to None (null)
+2. Head should not be altered, so use curr to point to head
+3. While curr exists => draw this out to visualize easier, ensure that temp points to next before the link breaks
+4. Returns prev because last iteration, curr points to temp which is non existent, prev takes in the last node 
+
 - Detect Cycle in a Linked List - https://leetcode.com/problems/linked-list-cycle/
 - Merge Two Sorted Lists - https://leetcode.com/problems/merge-two-sorted-lists/
 - Merge K Sorted Lists - https://leetcode.com/problems/merge-k-sorted-lists/
