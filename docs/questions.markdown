@@ -174,6 +174,18 @@ def lengthOfLongestSubstring(self, s: str) -> int:
 Tree
 
 - Maximum Depth of Binary Tree - https://leetcode.com/problems/maximum-depth-of-binary-tree/
+
+![]({{site.url}}/{{site.baseurl}}/assets/images/tree-qn-1.JPG)
+
+```python
+def maxDepth(self, root: TreeNode) -> int:
+    if root is None:
+        return 0
+    return 1 + max(self.maxDepth(root.left), self.maxDepth(root.right))
+```
+
+Note: 1 is added everytime maxDepth is called.
+
 - Same Tree - https://leetcode.com/problems/same-tree/
 - Invert/Flip Binary Tree - https://leetcode.com/problems/invert-binary-tree/
 - Binary Tree Maximum Path Sum - https://leetcode.com/problems/binary-tree-maximum-path-sum/
