@@ -39,6 +39,34 @@ Value ==> Index
 
 
 - Best Time to Buy and Sell Stock - https://leetcode.com/problems/best-time-to-buy-and-sell-stock/
+
+![]({{site.url}}/{{site.baseurl}}/assets/images/array-qn-2.JPG)
+
+Time complexity: O(n)
+
+```python
+    def maxProfit(self, prices: List[int]) -> int:
+        buy = prices[0]
+        sell = -sys.maxsize - 1
+        diff = 0
+        for i in range(1, len(prices)):
+            if prices[i] < buy:
+                buy = prices[i]
+                sell = -sys.maxsize - 1
+                print("replace buy", prices[i])
+            elif prices[i] > sell:
+                sell = prices[i]
+                print("replace sell", prices[i])
+            if sell - buy > diff:
+                diff = sell - buy
+                print("diff", diff)
+        return diff
+```
+
+Note: python MAX INTEGER: sys.maxsize
+      python MIN INTEGER: -sys.maxsize - 1
+
+
 - Contains Duplicate - https://leetcode.com/problems/contains-duplicate/
 - Product of Array Except Self - https://leetcode.com/problems/product-of-array-except-self/
 - Maximum Subarray - https://leetcode.com/problems/maximum-subarray/
